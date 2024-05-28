@@ -42,9 +42,9 @@ const routes: Routes = [
   {path: 'comments', component: CommentsComponent},
   {path: 'myAuto', component: MyAutoComponent},
   {path: 'persInfo', component: PersInfoComponent},
-  {path: '**', component: NotFound404Component},
   {path: 'succes', component: SuccessComponent},
   {path: "notfound", component: NotfoundComponent},
+  {path: '**', component: NotFound404Component},
   {path: '**', component: NotfoundComponent},
 ];
 

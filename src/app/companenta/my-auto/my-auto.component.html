@@ -85,28 +85,30 @@
                             </div>
                         </div>
 
-                        <div class="auto-card">
-                            <div class="auto-card-title">
-                                <p>Информация об авто</p>
-                                <img src="/assets/myAuto/edit.svg" alt="edit">
-                            </div>
-
-                            <div class="auto-link">
-                                <div class="auto-link-info">
-                                    <div class="auto-link-desc">
-                                        <p>Марка: <a href="#" class="name">Chevrolet</a></p>
-                                        <p>Год выпуска: <a href="#" class="name">2011</a></p>
-                                        <p>ОСАГО: <a href="#" class="name">РЕСО-Гарантия до 01.01.2020</a></p>
-                                    </div>
-                                    <div class="auto-link-desc">
-                                        <p>Модель: <a href="#" class="name">Aveo</a></p>
-                                        <p>VIN-код: <a href="#" class="name">1GNHGF1794HNV3645</a></p>
-                                        <p>КАСКО: <a href="#" class="name">-</a></p>
+                        @for(car of cars;track car.id){
+                            <div class="auto-card">
+                                <div class="auto-card-title">
+                                    <p>Информация об авто</p>
+                                    <img src="/assets/myAuto/edit.svg" alt="edit">
+                                </div>
+    
+                                <div class="auto-link">
+                                    <div class="auto-link-info">
+                                        <div class="auto-link-desc">
+                                            <p>Марка: <a href="#" class="name">{{car.brand}}</a></p>
+                                            <p>Год выпуска: <a href="#" class="name">{{car.prodYear}}</a></p>
+                                            <p>ОСАГО: <a href="#" class="name">РЕСО-Гарантия до 01.01.2020</a></p>
+                                        </div>
+                                        <div class="auto-link-desc">
+                                            <p>Модель: <a href="#" class="name">{{car.carModel}}</a></p>
+                                            <p>VIN-код: <a href="#" class="name">{{car.viNcode}}</a></p>
+                                            <p>КАСКО: <a href="#" class="name">-</a></p>
+                                        </div>
                                     </div>
                                 </div>
+    
                             </div>
-
-                        </div>
+                        }
 
                         <div class="auto-input">
                             <p>Добавить запись</p>
