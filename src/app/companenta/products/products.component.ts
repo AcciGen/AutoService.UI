@@ -9,13 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class ProductsComponent implements OnInit {
 
   products !: CarSeat[]
-  brand !: CarSeatBrand[]
+  brands !: CarSeatBrand[]
+  categories !: CarSeatCategory[]
   size = 3;
 
   constructor(private http: HttpClient){
   }
   ngOnInit(): void {
     this.getAll()
+    this.getAllBrand()
+    this.getAllMass()
   }
   getAll(){
     this.http.get<CarSeat[]>(`https://localhost:7048/api/CarSeat/GetAllCarSeat?PageIndex=1&Size=${this.size}`).
@@ -25,16 +28,16 @@ export class ProductsComponent implements OnInit {
   }
 
   getAllBrand(){
-    this.http.get<CarSeatBrand[]>(`https://localhost:7048/api/CarSeatBrand/GetAllCarSeatBrand?PageIndex=1&Size=${this.size}`).
+    this.http.get<CarSeatBrand[]>(`https://localhost:7048/api/CarSeatBrand/GetAllCarSeatBrand?PageIndex=1&Size=10`).
     subscribe((data)=>{
-      this.brand = data
+      this.brands = data
     })
   }
 
   getAllMass(){
-    this.http.get<CarSeat[]>(`https://localhost:7048/api/CarSeat/GetAllCarSeat?PageIndex=1&Size=${this.size}`).
+    this.http.get<CarSeatCategory[]>(`https://localhost:7048/api/CarSeatCategory/GetAllCarSeatCategory?PageIndex=1&Size=10`).
     subscribe((data)=>{
-      this.products = data
+      this.categories = data
     })
   }
   seeMore(){
