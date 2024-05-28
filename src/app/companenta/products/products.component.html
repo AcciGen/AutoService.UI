@@ -92,70 +92,18 @@
               </div>
             </div>
             <div class="products__right">
-              <div class="card" routerLink="/one_product">
-                <img src="./assets/sevenpages/image (2).svg" alt=""/>
-                <h4>Cybex</h4>
-                <h5>12 890 руб</h5>
-              </div>
-              <div class="card"  routerLink="/one_product">
-                <img src="./assets/sevenpages/image (8).png" alt="" />
-                <h4>Cybex</h4>
-                <h5>12 890 руб</h5>
-              </div>
-              <div class="card" routerLink="/one_product">
-                <img src="./assets/sevenpages/image (9).png" alt="" />
-                <h4>Cybex</h4>
-                <h5>12 890 руб</h5>
-              </div>
-              <div class="card" routerLink="/one_product">
-                <img src="./assets/sevenpages/image (10).png" alt="" />
-                <h4>Cybex</h4>
-                <h5>12 890 руб</h5>
-              </div>
-              <div class="card" routerLink="/one_product">
-                <img src="./assets/sevenpages/image (2).svg" alt="" />
-                <h4>Cybex</h4>
-                <h5>12 890 руб</h5>
-              </div>
-              <div class="card" routerLink="/one_product">
-                <img src="./assets/sevenpages/image (8).png" alt="" />
-                <h4>Cybex</h4>
-                <h5>12 890 руб</h5>
-              </div>
-              <div class="card" routerLink="/one_product">
-                <img src="./assets/sevenpages/image (9).png" alt="" />
-                <h4>Cybex</h4>
-                <h5>12 890 руб</h5>
-              </div>
-              <div class="card" routerLink="/one_product">
-                <img src="./assets/sevenpages/image (10).png" alt="" />
-                <h4>Cybex</h4>
-                <h5>12 890 руб</h5>
-              </div>
-              <div class="card" routerLink="/one_product">
-                <img src="./assets/sevenpages/image (2).svg" alt="" />
-                <h4>Cybex</h4>
-                <h5>12 890 руб</h5>
-              </div>
-              <div class="card" routerLink="/one_product">
-                <img src="./assets/sevenpages/image (8).png" alt="" />
-                <h4>Cybex</h4>
-                <h5>12 890 руб</h5>
-              </div>
-              <div class="card" routerLink="/one_product">
-                <img src="./assets/sevenpages/image (9).png" alt="" />
-                <h4>Cybex</h4>
-                <h5>12 890 руб</h5>
-              </div>
-              <div class="card" routerLink="/one_product">
-                <img src="./assets/sevenpages/image (10).png" alt="" />
-                <h4>Cybex</h4>
-                <h5>12 890 руб</h5>
-              </div>
+             
+              @for(product of products;track product.id){
+                <div class="card" routerLink="/one_product">
+                  <img [src]="'https://localhost:7048/'+product.photoPath" alt=""/>
+                  <h4>{{product.name}}</h4>
+                  <h5>{{product.price}} руб</h5>
+                </div>
+              }
             </div>
           </div>
           <div style="text-align: center">
-            <button>СМОТРЕТЬ ЕЩЁ</button>
+            <button (click)="seeMore()">СМОТРЕТЬ ЕЩЁ</button>
           </div>
           <p
             style="
