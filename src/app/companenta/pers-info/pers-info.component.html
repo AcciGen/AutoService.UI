@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Автосервис</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="pagination">
+                    <a href="#" class="link">Главная /</a>
+                    <a href="#" class="link">Личный кабинет СТО /</a>
+                    <a href="#" class="link">Персональная информация</a>
+                </div>
+
+
+
+                <div class="infos">
+                    <div class="aside-comment">
+                        <div class="aside-comment-info">
+                            <div class="aside-comment_header">
+                                <div>
+                                    <img src="/assets/persInfo/icon.svg" alt="icon" class="icon">
+                                    <p>Входящие заявки</p>
+                                </div>
+                                <img src="/assets/persInfo/notif.svg" alt="notif">
+                            </div>
+
+                            <div class="asidebar-comment">
+                                <img src="/assets/persInfo/icon.svg" alt="icon">
+                                <p>Информация о сервисе</p>
+                            </div>
+
+                            <div class="asidebar-comment">
+                                <img src="/assets/persInfo/icon.svg" alt="icon">
+                                <p>Фиксированные цены</p>
+                            </div>
+
+                            <div class="asidebar-comment">
+                                <img src="/assets/persInfo/icon.svg" alt="icon">
+                                <p>Акции</p>
+                            </div>
+
+                            <div class="asidebar-comment">
+                                <img src="/assets/persInfo/icon.svg" alt="icon">
+                                <p>Отзывы</p>
+                            </div>
+
+                            <div class="asidebar-comment">
+                                <img src="/assets/persInfo/icon.svg" alt="icon">
+                                <p>Увеличить доход СТО</p>
+                            </div>
+                        </div>
+
+                        <div class="aside-title">
+                            <small>На вашем счету</small>
+                            <p>500 бонусов</p>
+                            <button>ПОТРАТИТЬ</button>
+                        </div>
+
+                    </div>
+
+
+                    <div class="card">
+                        <div class="info-card">
+                            <p>Личные данные</p>
+                            <div class="choose">
+                                <div class="owner">
+                                    <input type="text" placeholder="Фамилия" class="input">
+                                    <input type="text" placeholder="Имя" class="input">
+                                    <input type="text" placeholder="Отчество" class="input">
+                                    <input type="date" required>
+                                </div>
+
+                                <div class="card-select">
+                                    <select name="country" id="country">
+                                        <option value="Москва">Москва</option>
+                                        <option value="Москва">Узбекистан</option>
+                                        <option value="Москва">Америка</option>
+                                        <option value="Москва">Анталия</option>
+                                    </select>
+
+                                    <input type="tel" name="phone" id="phone" placeholder="+7 (___) ___-__-__"
+                                        class="input">
+                                    <input type="email" placeholder="yourmail@domain.com" class="input">
+                                    <button routerLink="/succes">СОХРАНИТЬ</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-pass">
+                            <p>Пароль</p>
+
+                            <div class="password">
+                                <input type="password" placeholder="Старый пароль">
+                                <input type="password" placeholder="Новый пароль">
+                                <input type="password" placeholder="Повторите пароль">
+
+                                <button routerLink="/succes">ИЗМЕНИТЬ</button>
+                            </div>
+                        </div>
+
+                        <h4>Как получить бонусы, чтобы менять их на подарки и ремонтировать авто бесплатно?</h4>
+
+                        <div class="desc">
+                            <div class="desc-title">
+                                <div>
+                                    <p class="name">По промо-коду</p>
+                                    <a href="#">Ввести промо-код</a>
+                                </div>
+                                <p class="price">номинал</p>
+                            </div>
+
+                            <div class="desc-name">
+                                <p class="name">За каждого друга, которого Вы пригласите</p>
+                                <p class="price">500 руб</p>
+                            </div>
+
+                            <div class="informations">
+                                <div>
+                                    <p class="name">За каждого приведённого пользователя:<br>
+                                        в течение 90 дней после регистрации по вашей ссылке или промо-коду Вы будете
+                                        получать 50% от прибыли с заказа</p>
+                                    <div class="link">
+                                        <p>Ссылка:</p>
+                                        <div class="link-copy">
+                                            <a href="https://в-автосервис.рф/?invite=user15188">https://в-автосервис.рф/?invite=user15188</a>
+                                            <img src="/assets/persInfo/icon-copy.svg" alt="icon-copy">
+                                        </div>
+                                    </div>
+                                    <div class="link2">
+                                        <p>Промо-код:</p>
+                                        <div class="link-copy">
+                                            <a href="#">user15188</a>
+                                            <img src="/assets/persInfo/icon-copy.svg" alt="icon-copy">
+                                        </div>
+                                        <a href="#">Создать свой промо-код</a>
+                                        <a href="#">Пригласить</a>
+                                    </div>
+                                </div>
+                                <p class="price">50% на Вашу карту</p>
+                            </div>
+
+                            <div class="desc-name">
+                                <p class="name">За регистрацию</p>
+                                <p class="price">250 руб</p>
+                            </div>
+
+
+                            <div class="desc-names">
+                                <p class="name">Cash-back от каждого Вашего заказа в течение месяца</p>
+                                <p class="price">10% от заказа</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

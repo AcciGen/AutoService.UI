@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Автосервис</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="container">
+                <div class="pagination">
+                    <a href="#" class="link">Главная /</a>
+                    <a href="#" class="link">Личный кабинет СТО /</a>
+                    <a href="#" class="link"> Информация</a>
+                </div>
+
+                <div class="card">
+                    <div class="card--title">
+                        <h4>Получайте ещё больше клиентов с агрегатором записи на ремонт</h4>
+                        <img src="/assets/info/logo.svg" alt="logo">
+                    </div>
+                    <p class="card-name">Дорогие партнеры!</p>
+                    <p class="card-desc">
+                        В своих личных кабинетах Вы видите заявки на ремонт. Вы можете их принять, указать стоимость
+                        работ, уточнить, отказаться
+                        от заявки или пообщаться с клиентом в чате. Телефон клиента Вы видите только тогда, когда клиент
+                        выбрал Ваше СТО.
+                    </p>
+                    <div class="card-info">
+                        <div>
+                            <img src="/assets/info/icon-checkmark.svg" alt="icon-checkmark">
+                            <p>Помните, именно клиент выбирает дату и время записи! Если Вы никак не сможете принять его
+                                в это время, очень корректно согласуйте с ним новую дату и время;</p>
+                        </div>
+                        <div>
+                            <img src="/assets/info/icon-checkmark.svg" alt="icon-checkmark">
+                            <p>Финансовый отдел выставляет Вам счета 1 раз в месяц за произведенные работы. Пожалуйста,
+                                оплачивайте их своевременно
+                                чтобы получать максимальное количество заявок;</p>
+                        </div>
+                        <div>
+                            <img src="/assets/info/icon-checkmark.svg" alt="icon-checkmark">
+                            <p>Качество Вашей работы влияет на рейтинг и отзывы;</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="infos">
+                    <div class="aside-comment">
+                        <div class="aside-comment_header">
+                            <div>
+                                <img src="/assets/info/icon.svg" alt="icon" class="icon">
+                                <p>Входящие заявки</p>
+                            </div>
+                            <img src="/assets/info/notif.svg" alt="notif">
+                        </div>
+
+                        <div class="asidebar-comment">
+                            <img src="/assets/info/icon.svg" alt="icon">
+                            <p>Информация о сервисе</p>
+                        </div>
+
+                        <div class="asidebar-comment">
+                            <img src="/assets/info/icon.svg" alt="icon">
+                            <p>Фиксированные цены</p>
+                        </div>
+
+                        <div class="asidebar-comment">
+                            <img src="/assets/info/icon.svg" alt="icon">
+                            <p>Акции</p>
+                        </div>
+
+                        <div class="asidebar-comment">
+                            <img src="/assets/info/icon.svg" alt="icon">
+                            <p>Отзывы</p>
+                        </div>
+
+                        <div class="asidebar-comment">
+                            <img src="/assets/info/icon.svg" alt="icon">
+                            <p>Увеличить доход СТО</p>
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <div class="infos-up">
+                            <p>Основное</p>
+                            <div class="upload">
+                                <input type="file" name="file" id="file">
+                                <div>
+                                    <p>Загрузите логотип</p>
+                                    <p class="desc">Рекомендуется загрузить квадратное изображение не менее 512х512 px в
+                                        формате .jpg или
+                                        .png</p>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="Название бренда">
+
+                            <div class="select">
+                                <p>Категория бренда:</p>
+                                <div>
+                                    <input type="checkbox" name="all" id="all">
+                                    <strong>Все</strong>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="cars" id="cars">
+                                    <p>Автомобили</p>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="things" id="things">
+                                    <p>Запчасти</p>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="others" id="others">
+                                    <p>Заправки</p>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="service" id="service">
+                                    <p>Сервисы</p>
+                                </div>
+                            </div>
+
+                            <textarea name="text" id="text" cols="100" rows="4">Описание</textarea>
+
+
+                            <button routerLink="/succes">СОХРАНИТЬ</button>
+
+                        </div>
+
+                        <div class="category">
+                            <p>Критерии</p>
+
+                            <div class="category-card">
+                                <div class="category-definition">
+                                    <div class="category-title">
+                                        <strong>Комиссия</strong>
+                                        <div>
+                                            <img src="/assets/info/fld.svg" alt="fld">
+                                            <p>Укажите, какой % Вы готовы оплатить агрегатору от состоявшегося
+                                                ремонта.<br>
+                                                Обычно, нам платят 10%.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-title">
+                                        <strong>Оплата бонусами</strong>
+                                        <div>
+                                            <img src="/assets/info/fld.svg" alt="fld">
+                                            <p>Пользователи любят те СТО, которые принимают бонусы и становятся их
+                                                клиентами
+                                                гораздо чаще. Мы дополнительно рекламируем
+                                                такие СТО. Если не предусмотрено - оставьте поле пустым</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="category-title">
+                                        <strong>Скидка в День Рождения</strong>
+                                        <div>
+                                            <img src="/assets/info/fld.svg" alt="fld">
+                                            <p>Если не предусмотрено - оставьте поле пустым</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="category-service">
+                                    <p>Какие услуги предоставляет Ваш сервис</p>
+
+                                    <div>
+                                        <div class="service-select">
+                                            <div>
+                                                <input type="checkbox" name="park" id="park">
+                                                <img src="/assets/info/parkovka.svg" alt="parkovka">
+                                                <p>парковка</p>
+                                            </div>
+
+                                            <div>
+                                                <input type="checkbox" name="tv" id="tv">
+                                                <img src="/assets/info/tv.svg" alt="tv">
+                                                <p>TV</p>
+                                            </div>
+
+                                            <div>
+                                                <input type="checkbox" name="kofe" id="kofe">
+                                                <img src="/assets/info/kofe.svg" alt="kofe">
+                                                <p>чай/кофе</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="service-select">
+                                            <div>
+                                                <input type="checkbox" name="sofa" id="sofa">
+                                                <img src="/assets/info/sofa.svg" alt="sofa">
+                                                <p>зона отдыха</p>
+                                            </div>
+
+                                            <div>
+                                                <input type="checkbox" name="Wi-Fi" id="Wi-Fi">
+                                                <img src="/assets/info/wifi.svg" alt="Wi-Fi">
+                                                <p>Wi-Fi</p>
+                                            </div>
+
+                                            <div>
+                                                <input type="checkbox" name="оплата картой" id="оплата картой">
+                                                <img src="/assets/info/card.svg" alt="оплата картой">
+                                                <p>оплата картой</p>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="service-select">
+                                            <div>
+                                                <input type="checkbox" name="приём бонусов" id="приём бонусов">
+                                                <img src="/assets/info/bonus.svg" alt="приём бонусов">
+                                                <p>приём бонусов</p>
+                                            </div>
+
+                                            <div>
+                                                <input type="checkbox" name="эвакуатор" id="эвакуатор">
+                                                <img src="/assets/info/evakuator.svg" alt="эвакуатор">
+                                                <p>эвакуатор</p>
+                                            </div>
+
+                                            <div>
+                                                <input type="checkbox" name="авторизованный сервис"
+                                                    id="авторизованный сервис">
+                                                <img src="/assets/info/service.svg" alt="авторизованный сервис">
+                                                <p>авторизованный сервис</p>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                        <div class="selectOption">
+                            <p>Направления работы</p>
+
+                            <div class="all">
+                                <input type="checkbox">
+                                <p>Выбрать все</p>
+                            </div>
+
+                            <div class="options">
+                                <div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <strong>Диагностика</strong>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Диагностика АКПП</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Диагностика АКПП</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Диагностика АКПП</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Диагностика АКПП</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Диагностика АКПП</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Диагностика АКПП</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Диагностика АКПП</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Диагностика АКПП</p>
+                                    </div>
+
+
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <strong>Стёкла, фары</strong>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Бронирование фар</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена бокового стекла</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена бокового стекла с выездом</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Бронирование фар</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена бокового стекла</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена бокового стекла с выездом</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Бронирование фар</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена бокового стекла</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена бокового стекла с выездом</p>
+                                    </div>
+
+
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <strong>Трансмиссия</strong>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена ШРУСа</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Адаптация механизма выжима сцепления роботизированной трансмиссии</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена ШРУСа</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Адаптация механизма выжима сцепления роботизированной трансмиссии</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена ШРУСа</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Адаптация механизма выжима сцепления роботизированной трансмиссии</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена ШРУСа</p>
+                                    </div>
+
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <strong>Трансмиссия</strong>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена ШРУСа</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Адаптация механизма выжима сцепления роботизированной трансмиссии</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена ШРУСа</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена сцепления</p>
+                                    </div>
+
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена сцепления</p>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <strong>Кузовные работы</strong>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена крыла</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Окраска накладки наружного зеркала</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Дефектовка</p>
+                                    </div>
+
+
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <strong>Электрика</strong>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена генератора</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена генератора</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена генератора</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена генератора</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена генератора</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена генератора</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена генератора</p>
+                                    </div>
+
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <strong>Дополнительное оборудование</strong>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Установка парктроника</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена катализатора с "обманкой"</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Установка парктроника</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена катализатора с "обманкой"</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Установка парктроника</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена катализатора с "обманкой"</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Установка парктроника</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена катализатора с "обманкой"</p>
+                                    </div>
+
+
+                                </div>
+
+                                <div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <strong>Подвеска</strong>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена амортизаторов</p>
+                                    </div>
+
+
+
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <strong>Масло, жидкости, фильтры</strong>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена антифриза</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена антифриза</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена антифриза</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена антифриза</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена антифриза</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена антифриза</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена антифриза</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена антифриза</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена антифриза</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена антифриза</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена антифриза</p>
+                                    </div>
+
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <strong>Техническое обслуживание</strong>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Базовое ТО</p>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Базовое ТО</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Замена ремней и роликов вспомогательных механизмов</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Базовое ТО</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Базовое ТО</p>
+                                    </div>
+                                    <div>
+                                        <input type="checkbox">
+                                        <p>Базовое ТО</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button routerLink="/succes">СОХРАНИТЬ</button>
+                        </div>
+
+                        <div class="media">
+                            <p>Медиа</p>
+
+                            <small>Загрузите фото или видео, связанные с Вашим сервисом</small>
+
+                            <div>
+                                <input type="file" name="img" id="img">
+                                <img src="/assets/info/media1.png" alt="media">
+                                <img src="/assets/info/media2.png" alt="media">
+                                <img src="/assets/info/media3.png" alt="media">
+                                <img src="/assets/info/media4.png" alt="media">
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto service </title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./css/bootstrap/css/bootstrap.css">
+
+    <link rel="stylesheet" href="./css/main.css">
+
+</head>
+
+<body>
+
+    <!-- header boshlanib ketvotdi  navbar  -->
+
+    
+    
+
+        <hr class="m-0">
+        <p class="fs-13 gray mt-3">Главная / Тормозная система / Замена тормозных дисков</p>
+
+
+        <div class="main-img">
+            <div class="center1">
+
+                <h1>Замена тормозных колодок</h1>
+
+                <h2>Подберём лучший сервис по замене колодок</h2>
+            </div>
+        </div>
+
+        <!--  start forms -->
+
+        <h1>Подберём сервис за 7 минут. Просто заполни форму</h1>
+
+        <div class=" bg-gray p-4 br-5">
+            <form [formGroup]="form111" (ngSubmit)="onSubmit()">
+                <input type="text" placeholder="Имя" formControlName="name" style="border: none; border-radius: 5px;">
+                <input type="text" placeholder="Номер" formControlName="phone" style="border: none; border-radius: 5px;">
+                <select class="form-select" formControlName="brand">
+                    <option value="">Марка</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <select class="form-select" formControlName="model">
+                    <option value="">Модель</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+                <input type="text" placeholder="Комментарий" formControlName="comment" class="koment">
+                <div style="width: 375px; height: 18px; margin-left: 290px; margin-top: 10px;">
+                    <p style="font-size: 13px;">Я соглашаюсь с <a href="">условиями обработки персональных данных</a></p>
+                </div>
+                <button type="submit" style="border: none; border-radius: 5px; background-color:#6081D2; color: white; width: 200px; height: 35px; margin-left: 350px; margin-top: 10px;">
+                    <p style="font-size: 14px; margin-top: 4px;">Получите предложения СТО</p>
+                </button>
+            </form>
+              
+              
+        </div>
+
+
+
+        <!--  strat 3 section  -->
+
+        <div class="mt-5">
+
+            <div class=" d-flex align-items-end justify-content-between">
+                <h2 class="m-0"> Предложения с фиксированными ценами </h2>
+
+                <h6 class="d-flex gap-2 m-0 "> По цене:<p class="fw-light m-0">дешевле <img class="m-0"
+                            src="assets/arrow.png" alt=""> </p>
+                </h6>
+
+            </div>
+
+
+
+            <!-- block -->
+            <div class="shadow d-flex br-5 justify-content-between mt-4 ps-4 pe-3">
+
+                <div>
+                    <p class="text-blue m-0 pt-3"> Диагностика Диагностика кондиционера</p>
+                    <p class="fs-13 gray">Здесь будет описан комментарий к указанной фиксированной цене </p>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center">
+                    <p class="m-0"> <b class="color-red-main">500 руб</b></p>
+
+                    <form action="">
+                        <button class="btn-blue ">
+                            Записаться
+                        </button>
+                    </form>
+                </div>
+
+
+            </div>
+
+            <!-- block -->
+
+
+
+            <div class="shadow d-flex br-5 justify-content-between mt-4 ps-4 pe-3">
+
+                <div>
+                    <p class="text-blue m-0 pt-3"> Диагностика Диагностика кондиционера</p>
+                    <p class="fs-13 gray">Здесь будет описан комментарий к указанной фиксированной цене </p>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center">
+                    <p class="m-0"> <b class="color-red-main">500 руб</b></p>
+
+                    <form action="">
+                        <button class="btn-blue ">
+                            Записаться
+                        </button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="shadow d-flex br-5 justify-content-between mt-4 ps-4 pe-3">
+
+                <div>
+                    <p class="text-blue m-0 pt-3"> Диагностика Диагностика кондиционера</p>
+                    <p class="fs-13 gray">Здесь будет описан комментарий к указанной фиксированной цене </p>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center">
+                    <p class="m-0"> <b class="color-red-main">500 руб</b></p>
+
+                    <form action="">
+                        <button class="btn-blue ">
+                            Записаться
+                        </button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="shadow d-flex br-5 justify-content-between mt-4 ps-4 pe-3">
+
+                <div>
+                    <p class="text-blue m-0 pt-3"> Диагностика Диагностика кондиционера</p>
+                    <p class="fs-13 gray">Здесь будет описан комментарий к указанной фиксированной цене </p>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center">
+                    <p class="m-0"> <b class="color-red-main">500 руб</b></p>
+
+                    <form action="">
+                        <button class="btn-blue ">
+                            Записаться
+                        </button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="shadow d-flex br-5 justify-content-between mt-4 ps-4 pe-3">
+
+                <div>
+                    <p class="text-blue m-0 pt-3"> Диагностика Диагностика кондиционера</p>
+                    <p class="fs-13 gray">Здесь будет описан комментарий к указанной фиксированной цене </p>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center">
+                    <p class="m-0"> <b class="color-red-main">500 руб</b></p>
+
+                    <form action="">
+                        <button class="btn-blue ">
+                            Записаться
+                        </button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="shadow d-flex br-5 justify-content-between mt-4 ps-4 pe-3">
+
+                <div>
+                    <p class="text-blue m-0 pt-3"> Диагностика Диагностика кондиционера</p>
+                    <p class="fs-13 gray">Здесь будет описан комментарий к указанной фиксированной цене </p>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center">
+                    <p class="m-0"> <b class="color-red-main">500 руб</b></p>
+
+                    <form action="">
+                        <button class="btn-blue ">
+                            Записаться
+                        </button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="shadow d-flex br-5 justify-content-between mt-4 ps-4 pe-3">
+
+                <div>
+                    <p class="text-blue m-0 pt-3"> Диагностика Диагностика кондиционера</p>
+                    <p class="fs-13 gray">Здесь будет описан комментарий к указанной фиксированной цене </p>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center">
+                    <p class="m-0"> <b class="color-red-main">500 руб</b></p>
+
+                    <form action="">
+                        <button class="btn-blue ">
+                            Записаться
+                        </button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="shadow d-flex br-5 justify-content-between mt-4 ps-4 pe-3">
+
+                <div>
+                    <p class="text-blue m-0 pt-3"> Диагностика Диагностика кондиционера</p>
+                    <p class="fs-13 gray">Здесь будет описан комментарий к указанной фиксированной цене </p>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center">
+                    <p class="m-0"> <b class="color-red-main">500 руб</b></p>
+
+                    <form action="">
+                        <button class="btn-blue ">
+                            Записаться
+                        </button>
+                    </form>
+                </div>
+
+
+            </div>
+            <div class="shadow d-flex br-5 justify-content-between mt-4 ps-4 pe-3">
+
+                <div>
+                    <p class="text-blue m-0 pt-3"> Диагностика Диагностика кондиционера</p>
+                    <p class="fs-13 gray">Здесь будет описан комментарий к указанной фиксированной цене </p>
+                </div>
+
+                <div class="d-flex gap-3 align-items-center">
+                    <p class="m-0"> <b class="color-red-main">500 руб</b></p>
+
+                    <form action="">
+                        <button class="btn-blue ">
+                            Записаться
+                        </button>
+                    </form>
+                </div>
+
+
+            </div>
+
+
+
+
+            <div class="center p-5">
+
+
+                <form action="">
+                    <button type="submit" class="btn-blue">
+                        Все предложения
+                    </button>
+
+                </form>
+            </div>
+
+
+        </div>
+
+
+        <!--  end section  -->
+
+        <!--  start 4 section  -->
+
+
+        <div class="d-flex gap-5">
+            <img class="w-240" src="assets/phone1.png" alt="">
+
+            <div>
+                <b> 501 автосервис на одном агрегаторе</b> <br>
+                Агрегатор записи автомобилей в СТО в-автосервис.рф подключил 501 автосервис к своей платформе. Еще
+                больше возможностей получают автовладельцы, которые обращаются для того чтобы посчитать стоимость
+                покраски автомобиля, записаться на установку ГБО, записаться на шиномонтаж или выполнить любую другую
+                работу по обслуживанию своего авто.
+                Ремонт Вашего автомобиля это теперь забота агрегатора, который подбирает СТО, предлагает варианты
+                стоимости ремонта, записывает Вас на удобное время в том районе города в котором Вы хотите произвести
+                обслуживание авто или его ремонт.
+                Еще больше акций ждут наших клиентов в ближайшее время. Больше партнерских программ с банками, торговыми
+                сетями, еще больше подарков в магазине подарков и приятных сюрпризов, включая повышенный кэш-бэк за
+                каждый ремонт. <br>
+                <b>В-автосервис.рф расширяет свою географию</b> <br>
+                В-автосервис.рф расширяет свою географию – записаться на ремонт Вы можете практически в любом городе
+                России, а если не нашли своего города – звоните на нашу горячую линию и мы Вам обязательно поможем.
+                В-автосервис.рф – партнер Русского АвтоМото Клуба и вместе с компанией Автоюрист поддерживает начинающих
+                водителей. Более подробно о программе мы расскажем в нашей ленте.
+
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+</body>
+
+</html>

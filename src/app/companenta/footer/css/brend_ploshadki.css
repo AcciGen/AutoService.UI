@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+
+}
+
+textarea {
+    resize: none;
+    border: 1px solid rgb(176, 173, 173);
+    border-radius: 5px;
+}
+
+.bg-red-main {
+    background-color: #DB4661;
+}
+
+
+.conatiner {
+    max-width: 1100px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    height: 40px;
+
+}
+
+.fa-viber {
+    color: white;
+    background-color: #f66e87;
+
+}
+
+
+.fa-whatsapp {
+    color: white;
+    background-color: #f66e87;
+
+}
+
+.tx_right_navbar {
+    text-decoration: none;
+
+}
+
+.color-white {
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
+.nav-tx-center {
+    font-weight: 100;
+    color: white;
+    font-size: 17px;
+    text-decoration: underline;
+}
+
+.fa-telegram {
+    background-color: transparent;
+    color: white;
+}
+
+.left_navbar {
+    display: flex;
+    gap: 10px;
+}
+
+.left_buttons {
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.reg-button {
+    padding: 2px 8px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: white;
+    background-color: white;
+
+}
+
+.color-red-main {
+    color: #f66e87;
+}
+
+
+/*  end navbar */
+
+
+/*  start 1 section */
+
+
+.first_section {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_img {
+    width: 207.25px;
+    height: 32px;
+    top: 55px;
+    left: 375px;
+    gap: 0px;
+    opacity: 0px;
+
+
+}
+
+.text-bottom-logo {
+    width: 207.25px;
+    font-size: 11px;
+    color: grey;
+    background-color: rgb(199, 199, 199);
+}
+
+.w-250 {
+    width: 210px;
+}
+
+.w-650 {
+    width: 800px;
+
+}
+
+.gap-50 {
+    gap: 50px;
+}
+
+.img-robo {
+    width: 18px;
+    height: 18px;
+}
+
+.fst-blue-txt {
+    color: #6081D2;
+    font-size: 13px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.gray {
+    color: gray;
+}
+
+/* <!-- start avto brend --> */
+
+.btn-red-active_1:hover{
+    cursor: pointer;
+    background: #DB4661;
+    color: white;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.btn-red-active{
+    background: #DB4661;
+    color: white;
+    text-decoration: none;
+
+}
+
+.grid-5{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px 10px ;
+
+    img{
+        width: 100%;
+        height: 125px;
+    }
+}
+
+
+
+
+
+/* start form */
+
+
+.bg-gray {
+    background-color: #0000000A;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer-img {
+    width: 445px;
+    height: 376px;
+    position: absolute;
+    transform: translate(  );
+    top: -314px;
+    right: 20%;
+}
+
+.footer-icons{
+    position: relative;
+    transform: translate( -0px -50px );
+    z-index: 5;
+}
