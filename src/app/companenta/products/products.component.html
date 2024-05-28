@@ -26,70 +26,21 @@
           <div class="cards__total">
             <div class="products__left">
               <h4>Цена</h4>
-              <div style="display: flex; gap: 25px">
-                <p>от 0 руб</p>
-                <p>до 300 000 руб</p>
-              </div>
-              <img src="./assets/sevenpages/set line.svg" alt="" />
-              <h4 style="margin-top: 20px">Группа:</h4>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>0+ (0-12 мес)</p>
-              </div>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>0+ (0-12 мес)</p>
-              </div>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>0+ (0-12 мес)</p>
-              </div>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>0+ (0-12 мес)</p>
-              </div>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>0+ (0-12 мес)</p>
-              </div>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>0+ (0-12 мес)</p>
-              </div>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>0+ (0-12 мес)</p>
-              </div>
+              @for(category of categories;track category.id){
+                <div style="display: flex; gap: 10px; margin-top: 15px">
+                  <input type="checkbox" style="width: 10px" />
+                  <p>{{category.startAge}}+ ({{category.startAge}}-{{category.endAge}} мес)</p>
+                </div>
+              }
 
               <h4 style="margin-top: 20px">Бренд:</h4>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>Cybex (Германия)</p>
-              </div>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>Cybex (Германия)</p>
-              </div>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>Cybex (Германия)</p>
-              </div>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>Cybex (Германия)</p>
-              </div>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>Cybex (Германия)</p>
-              </div>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>Cybex (Германия)</p>
-              </div>
-              <div style="display: flex; gap: 10px; margin-top: 15px">
-                <input type="checkbox" style="width: 10px" />
-                <p>Cybex (Германия)</p>
-              </div>
+              
+              @for(brand of brands;track brand.id){
+                <div style="display: flex; gap: 10px; margin-top: 15px">
+                  <input type="checkbox" style="width: 10px" />
+                  <p>{{brand.name}}</p>
+                </div>
+              }
             </div>
             <div class="products__right">
              
