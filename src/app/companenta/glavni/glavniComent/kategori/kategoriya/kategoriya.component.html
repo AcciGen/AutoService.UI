@@ -38,48 +38,14 @@
             <img style="margin-left: 10px;" src="assets/glavni/icon-mic.svg" alt="">
         </a>
         <hr>
-        <div>
-            <img style="margin-left: 15px;" src="assets/glavni/icon (4).svg" alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">Диагностика</a>
-            <img style="margin-left: 200px;" src="assets/glavni/icon (7).svg" alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">Техническое обслуживание</a>
-        </div>
-        <div style="margin-top: 20px;">
-            <img style="margin-left: 15px;" src="assets/glavni/icon (5).svg" alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;"  href="">Проверка сход/развала</a>
-            <img style="margin-left: 119px;" src="assets/glavni/icon (8).svg" alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;"  href="">Тормозная система</a>
-        </div>
-        <div style="margin-top: 20px;">
-            <img style="margin-left: 15px;" src="assets/glavni/icon (9).svg" alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">Кузовные работы</a>
-            <img style="margin-left: 162px;" src="assets/glavni/icon (10).svg" alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">Трансмиссия</a>
-        </div>
-        <div style="margin-top: 20px;">
-            <img style="margin-left: 15px;" src="assets/glavni/icon (11).svg" alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">Услуги с выездом</a>
-            <img style="margin-left: 162px;" src="assets/glavni/icon (12).svg"alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">Подвеска</a>
-        </div>
-        <div style="margin-top: 20px;">
-            <img style="margin-left: 15px;" src="assets/glavni/icon (13).svg" alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">Защитные плёнки</a>
-            <img style="margin-left: 158px;" src="assets/glavni/icon (14).svg" alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">Дубликаты ключей</a>
-        </div>
-        <div style="margin-top: 20px;">
-            <img style="margin-left: 15px;"  src="assets/glavni/icon (15).svg" alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">Стёкла, фары</a>
-            <img style="margin-left: 190px;"  src="assets/glavni/icon (16).svg"alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">Техническое обслуживание</a>
-        </div>
-        <div style="margin-top: 20px;">
-            <img  style="margin-left: 15px;" src="assets/glavni/icon (17).svg" alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">Проверка сход/развала</a>
-            <img  style="margin-left: 110px;" src="assets/glavni/icon (18).svg" alt="">
-            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">Тормозная система</a>
-        </div>
+        @for(serv of services; track serv.id){
+          <div>
+            <img style="margin-left: 15px;" [src]="getRandomPic()" alt="pic">
+            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">{{serv.name}}</a>
+            <img style="margin-left: 200px;" [src]="getRandomPic()" alt="pic">
+            <a style="text-decoration: none; color: black;margin-left: 15px;" href="">{{serv.name}}</a>
+          </div>
+        }
     </div>
     <div class="child2">
         <input style="border: none;margin-top: 20px;margin-left: 15px; width: 230px;margin-right: 5px;" type="text" placeholder="какой ремонт вам нужен?">
