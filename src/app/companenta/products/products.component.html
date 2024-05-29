@@ -45,7 +45,7 @@
             <div class="products__right">
              
               @for(product of products;track product.id){
-                <div class="card" routerLink="/one_product">
+                <div class="card" (click)="oneProd(product.id)" style="cursor: pointer;">
                   <img [src]="'https://localhost:7048/'+product.photoPath" alt=""/>
                   <h4>{{product.name}}</h4>
                   <h5>{{product.price}} руб</h5>
