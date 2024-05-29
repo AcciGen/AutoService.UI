@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-products',
@@ -13,7 +14,7 @@ export class ProductsComponent implements OnInit {
   categories !: CarSeatCategory[]
   size = 3;
 
-  constructor(private http: HttpClient){
+  constructor(private http: HttpClient,private router : Router){
   }
   ngOnInit(): void {
     this.getAll()
@@ -47,6 +48,11 @@ export class ProductsComponent implements OnInit {
   seeLess(){
     this.size=this.size - 8;
     this.ngOnInit()
+  }
+
+  oneProd(id: string){
+    localStorage.setItem("pr_id",id);
+    this.router.navigateByUrl('one_product');
   }
 }
 

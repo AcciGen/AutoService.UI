@@ -23,7 +23,7 @@
         </div>
         <div class="one-product__total">
           <div class="one__product">
-            <img src="./assets/sevenpages/image (8).png" alt="" />
+            <img [src]="'https://localhost:7048/'+product.photoPath" alt="" />
           </div>
           <div>
             <p style="font-weight: 300; size: 13px">Детское автокресло</p>
@@ -34,7 +34,7 @@
                 width: 174px;
                 margin-top: 12px;
               ">
-              Smart Travel
+              {{product.name}}
             </h2>
             <h5
               style="
@@ -43,19 +43,16 @@
                 margin-top: 10px;
                 margin-bottom: 10px;
               ">
-              First
+              {{product.mass}}
             </h5>
             <div class="one-product__inner">
               <div>
-                <p>Группа: 0+ (0-12 мес)</p>
-                <p>Гарантия: 6 месяцев</p>
+                <p>Группа: {{product.category.startAge}}+ ({{product.category.startAge}}-{{product.category.endAge}} мес)</p>
+                <p>Гарантия: {{product.guarantee}} месяцев</p>
               </div>
+              
               <div>
-                <p>Группа: 0+ (0-12 мес)</p>
-                <p>Гарантия: 6 месяцев</p>
-              </div>
-              <div>
-                <p>Страна происхождения:</p>
+                <p>{{product.brand.name}}</p>
               </div>
             </div>
             <br />
@@ -65,7 +62,7 @@
             <br />
             <br />
             <h5 style="color: grey; text-decoration: line-through">
-              5 225 руб
+              {{product.price+0}} руб
             </h5>
             <h3
               style="
@@ -74,7 +71,7 @@
                 font-weight: 700;
                 margin-bottom: 5px;
               ">
-              4 525 руб
+             {{product.price}} руб
             </h3>
             <button>ЗАКАЗАТЬ</button>
           </div>
