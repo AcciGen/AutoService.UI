@@ -1,0 +1,13 @@
+.card {
+    display: inline;
+    width: 25%;
+}
+.card img {
+    width: 100%;
+}
+
+@media screen and (max-width: 80rem) {
+    .card {  
+        width: 33.3%;
+    }
+}

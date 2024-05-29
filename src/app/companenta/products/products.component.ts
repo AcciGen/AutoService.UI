@@ -12,7 +12,7 @@ export class ProductsComponent implements OnInit {
   products !: CarSeat[]
   brands !: CarSeatBrand[]
   categories !: CarSeatCategory[]
-  size = 3;
+  size = 8;
 
   constructor(private http: HttpClient,private router : Router){
   }
@@ -52,7 +52,7 @@ export class ProductsComponent implements OnInit {
 
   oneProd(id: string){
     localStorage.setItem("pr_id",id);
-    this.router.navigateByUrl('one_product');
+    this.router.navigateByUrl('/one_product');
   }
 }
 
