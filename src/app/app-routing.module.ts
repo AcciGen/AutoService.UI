@@ -33,6 +33,7 @@ const routes: Routes = [
   {path: 'kartochka-brend', component: KartochkaBrendComponent},
   {path: 'footer', component: FooterComponent},
   {path: 'all_service', component: AllServiceComponent},
+  {path: 'hamma_servicelar', component: HammaServicelarComponent},
   {path: 'newest', component: NewestComponent},
   {path: 'one_product', component: OneProductComponent},
   {path: 'products', component: ProductsComponent},
